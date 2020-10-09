@@ -16,7 +16,17 @@ plot(c);
 title("Carrier signal of fc= 1000 Hz");
 
 %taking dsbsc of messsage signal m 
-x = m.*c;
+x1 = m.*c;
 figure(3);
 plot(x);
 
+m = outsignal2;
+figure(4);
+plot(outsignal2);
+title('The Voice 2');
+
+
+%taking dsbsc of messsage signal m 
+x2 = m.*c;
+figure(5);
+plot(x);
