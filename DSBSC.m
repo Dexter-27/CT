@@ -27,6 +27,15 @@ title('The Voice 2');
 
 
 %taking dsbsc of messsage signal m 
+fc= 500;%uppdate to 500
+c= cos(2*pi*fc*t);
 x2 = m.*c;
 figure(5);
 plot(x2);
+
+
+%FDM
+x= x1+x2;
+figure(6);
+plot(x);
+title("The combination of all voices in single shannel");
